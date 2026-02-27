@@ -2,3 +2,68 @@ body {
     background-color: #1f318c;
     text-align: left;
 }
+
+h1 {
+    color: floralwhite;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-align: center;
+}
+
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+/* Map, body, and text styles */
+.map-container {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.map-data-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1; /* above the map canvas */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px;
+    border-radius: 8px;
+    width: 260px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.map-search-container {
+    margin-bottom: 10px;
+}
+
+.geocoder {
+    margin: 8px 0;
+}
+
+.option-label {
+    font: 15px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 95%;
+    padding-bottom: 8px;
+}
+
+#boundaryfieldset {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#layer-select {
+    width: 100%;
+    margin-top: 6px;
+}
