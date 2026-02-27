@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toronto Stats Visualizer</title>
+    <link rel="icon" type="image/x-icon" href="../Lab3/Statistics-Silhouette.png">
+    <!---CDN for Mapbox GL JS--->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js'></script>
+    <!---Link to CSS file--->
+    <link href="style.css" rel="stylesheet">
+    <!---CDN for Mapbox Geocoder--->
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.css"
+        type="text/css">
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.min.js"></script>
+    <!-- -CDN for Bootstrap- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
-    
+    <div class="center-text"> <!---Header of the page--->
+        <h1>Toronto Spatial Statistic Visualizer</h1>
+    </div>
+    <div class="col min-vh-100 flex-column"> <!---Map that takes up the rest of the page--->
+        <div id="my-map" class="map-container"></div>
+    </div>
+    <!---Link to JS file-->
+    <script src="script.js"></script>
+    <!---CDN for Bootstrap--->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </body>
+
 </html>
