@@ -30,9 +30,13 @@
     <div class="center-text">
         <h1>Toronto Spatial Statistic Visualizer</h1>
     </div>
-
     <div class="map-wrapper">
         <div id="my-map" class="map-container"></div>
+        <!-- LEGEND -->
+        <div id='legend' class='legend'>
+            <h4>Median Household Income After-Tax/Unsuitability</h4>
+            <!-- Contents of legend will now be added here -->
+        </div>
         <!-- INTERACTIVITY -->
         <div class='map-data-container'>
             <label class="option-label" for="layercheck">Filter map view</label>
@@ -61,12 +65,12 @@
                 <fieldset id="boundaryfieldset">
                     <label class="option-label">Select variable/classification scheme</label>
                     <select id="layer-select" name="layer-select">
-                        <option value="neighbourhoods-quantile">Income (Quantile)</option>
-                        <option value="neighbourhoods-natural">Income (Natural Breaks)</option>
-                        <option value="neighbourhoods-equal">Income (Equal Interval)</option>
+                        <option value="neighbourhoods-quantile">Median Household Income After-Tax (Quantile)</option>
+                        <option value="neighbourhoods-geometric-interval">Median Household Income After-Tax (Geometric Interval)</option>
+                        <option value="neighbourhoods-equal-interval">Median Household Income After-Tax (Equal Interval)</option>
                         <option value="unsuitable-quantile">Unsuitable Housing (Quantile)</option>
-                        <option value="unsuitable-natural">Unsuitable Housing (Natural Breaks)</option>
-                        <option value="unsuitable-equal">Unsuitable Housing (Equal Interval)</option>
+                        <option value="unsuitable-geometric-interval">Unsuitable Housing (Geometric Interval)</option>
+                        <option value="unsuitable-equal-interval">Unsuitable Housing (Equal Interval)</option>
                     </select>
                 </fieldset>
             </form>
