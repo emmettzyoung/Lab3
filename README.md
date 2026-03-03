@@ -14,3 +14,6 @@ This map is intended for those who want a quick visualization of median incomes 
 
 ### Notes of ownership:
 This map and the code included should not be copied without the owner being mentioned. Please mention any code copied was written by emmettzyoung on GitHub. Additionally, use of my mapbox token for other projects is not allowed, and users trying to make use of MapBox's API must retrieve and use their own access token.
+
+### A.I. Usage:
+The use of Artificial Intelligence was used in this project to help create a legend that updates based on the current selected layer. This was accomplished through first creating a legend for the default selected view, before asking the LLM Claude for assistance in the creation of an updating legend relative to the selected form option. With the rest of my code in my JavaScript file as a context, Claude helped to create a legend dictionary, before creating a function that updats the legend by clearing the existing contents and rebuilding it to match the current selected form option. For more information on this usage in addition to other minor troubleshooting issues, feel free to contact me for further information.
