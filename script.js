@@ -9,7 +9,7 @@ INITIALISE MAP
 const map = new mapboxgl.Map({
     container: 'my-map',
     style: 'mapbox://styles/emmettyoung/cmlh2534n006s01qv686sadry',
-    center: [-79.38, 43.65],
+    center: [-79.380754, 43.711979],
     zoom: 10,
     maxBounds: [
         [-80.110931, 43.425996],
@@ -40,7 +40,7 @@ document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 // Add event listener to the return button, which flies the map back to the original center and zoom level when clicked.
 document.getElementById('returnbutton').addEventListener('click', () => {
     map.flyTo({
-        center: [-79.38, 43.65],
+        center: [-79.380754, 43.711979],
         zoom: 10,
         essential: true
     });
